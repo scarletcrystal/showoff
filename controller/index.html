@@ -1,0 +1,61 @@
+<title>Showoff Controller</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Galada|Raleway" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
+<script type="text/javascript" src="js/mithril.min.js"></script>
+<script type="text/javascript" src="js/socket.io.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+<style type="text/css">
+	body {
+		margin: 0;
+	}
+
+	.main {
+		width: 100%;
+		font-family: 'Raleway', sans-serif;
+		text-align: center;
+	}
+
+	.main h2 {
+		font-family: 'Galada', serif;
+	}
+
+	.cues {
+		margin: 0;
+		width: 100%;
+	}
+
+	.cues .cue {
+		padding: 20px 0;
+		width: 100%;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.cues .cue.active a::after {
+		content: "[active]";
+		display: inline-block;
+		margin-left: 5px;
+		color: #2abb17;
+		font-size: small;
+	}
+
+	.util {
+		position: absolute;
+		padding: 20px 0;
+		width: 100%;
+		border-top: 1px solid #ddd;
+		bottom: 0px;
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+	a {
+		color: #10aded;
+		text-decoration: none;
+		width: 100%;
+	}
+
+	a i {
+		margin-right: 10px;
+	}
+</style>
