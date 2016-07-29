@@ -1,6 +1,8 @@
 const electron = require('electron')
 const express = require("express")
 
+require('electron-reload')(__dirname) //PURELY FOR TESTING
+
 const app = electron.app
 const webapp = express()
 
@@ -21,7 +23,7 @@ app.on('ready', function() {
     })
 
     mainWindow.loadURL(`file://${__dirname}/index.html`)
-
+    mainWindow.openDevTools('bottom')
     mainWindow.on('closed', function() {
         mainWindow = null
     })
